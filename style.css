@@ -30,6 +30,9 @@
     background-position: 10rem 60%, 2rem 100%;
     font-family: 'Montserrat', sans-serif;
   }
+  body h1 {
+    color: var(--Light-Grayish-Blue);
+  }
   body .ContainerSwitch {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -42,6 +45,9 @@
     /* Hide default HTML checkbox */
     /* The slider */
     /* Rounded sliders */
+  }
+  body .ContainerSwitch span {
+    color: var(--Light-Grayish-Blue);
   }
   body .ContainerSwitch .switch {
     position: relative;
@@ -96,6 +102,15 @@
   }
   body .ContainerSwitch .slider.round:before {
     border-radius: 50%;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main .ContainerPricing {
     display: -webkit-box;
@@ -153,6 +168,7 @@
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
   }
   body main .ContainerPricingBlue {
     display: -webkit-box;
@@ -212,7 +228,25 @@
     background: var(--Very-Light-Grayish-Blue);
     color: #696fdd;
     border: none;
+    cursor: pointer;
     border-radius: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: 67rem 0rem, 4rem 33rem;
+  }
+  body main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

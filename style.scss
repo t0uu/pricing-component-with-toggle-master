@@ -41,10 +41,16 @@
         background-repeat: no-repeat;
         background-position: 10rem 60%, 2rem 100%;
         font-family: 'Montserrat', sans-serif;
+        h1{
+            color: var(--Light-Grayish-Blue);
+        }
 .ContainerSwitch{
     display: flex;
     align-self: center;
     align-items: center;
+   span{
+       color: var(--Light-Grayish-Blue);
+   }
     .switch {
         position: relative;
     display: inline-block;
@@ -112,6 +118,8 @@
     }
 }
 main{
+    display: flex;
+    flex-direction: column;
     .ContainerPricing{
         display: flex;
         flex-direction: column;
@@ -150,6 +158,7 @@ main{
                     color: white;
                     border: none;
                     border-radius: 5px;
+                    cursor: pointer;
                 }
             }
         }
@@ -194,6 +203,7 @@ main{
                     background: var(--Very-Light-Grayish-Blue);
                     color:  rgba(105,111,221,1);
                     border: none;
+                    cursor: pointer;
                     border-radius: 5px;
                 }
             }
@@ -201,5 +211,17 @@ main{
 }
 
 }
+    }
+}
+
+
+@media(min-width: 1024px){
+    body{
+        flex-direction: column;
+        background-position:67rem 0rem, 4rem 33rem;
+        main{
+            flex-direction: row;
+            margin: 1rem;
+        }
     }
 }
