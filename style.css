@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+:root {
+  --Linear-Gradient: #a3a8f0 to #696fdd;
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+@media (min-width: 375px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
+    background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: 10rem 60%, 2rem 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body .ContainerSwitch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* Hide default HTML checkbox */
+    /* The slider */
+    /* Rounded sliders */
+  }
+  body .ContainerSwitch .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0rem 1rem;
+  }
+  body .ContainerSwitch .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  body .ContainerSwitch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  body .ContainerSwitch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  body .ContainerSwitch input:checked + .slider {
+    background-color: #696fdd;
+  }
+  body .ContainerSwitch input:hover + .slider {
+    background-color: #a3a8f0;
+  }
+  body .ContainerSwitch input:focus + .slider {
+    -webkit-box-shadow: 0 0 1px #696fdd;
+            box-shadow: 0 0 1px #696fdd;
+  }
+  body .ContainerSwitch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  body .ContainerSwitch .slider.round {
+    border-radius: 34px;
+  }
+  body .ContainerSwitch .slider.round:before {
+    border-radius: 50%;
+  }
+  body main .ContainerPricing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: var(--Very-Light-Grayish-Blue);
+    padding: 2rem;
+    margin: 1rem 0rem;
+    border-radius: 15px;
+  }
+  body main .ContainerPricing h2 {
+    font-size: 3rem;
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+    padding: 1rem 0rem;
+    margin: 0rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body main .ContainerPricing .BoxBenefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .ContainerPricing .BoxBenefits span {
+    color: var(--Dark-Grayish-Blue);
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 1rem;
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+    margin: 0.6rem 0rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body main .ContainerPricing .BoxBenefits .BoxBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .ContainerPricing .BoxBenefits .BoxBtn .BtnLearn {
+    margin: 1.5rem 0rem;
+    padding: 0.8rem 6rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+    background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  body main .ContainerPricingBlue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+    background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+    padding: 2rem;
+    border-radius: 15px;
+  }
+  body main .ContainerPricingBlue p {
+    color: white;
+  }
+  body main .ContainerPricingBlue h2 {
+    color: white;
+    font-size: 4rem;
+    border-bottom: 1px solid var(--Very-Light-Grayish-Blue);
+    padding: 2rem 0rem;
+    margin: 0rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body main .ContainerPricingBlue .BoxBenefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .ContainerPricingBlue .BoxBenefits span {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 1rem;
+    border-bottom: 1px solid var(--Very-Light-Grayish-Blue);
+    margin: 0.6rem 0rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body main .ContainerPricingBlue .BoxBenefits .BoxBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .ContainerPricingBlue .BoxBenefits .BoxBtn .BtnLearn {
+    margin: 1.5rem 0rem;
+    padding: 0.8rem 6rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background: var(--Very-Light-Grayish-Blue);
+    color: #696fdd;
+    border: none;
+    border-radius: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
